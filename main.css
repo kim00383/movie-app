@@ -1,0 +1,106 @@
+/**** DEFAULTS ****/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;  /* 1rem will equal this now */
+    line-height: 1.6;
+    font-family: sans-serif; /* add google fonts */
+}
+header{
+    padding:1.3rem;
+    background-image: url("../img/bg.jpeg");
+    font-size:40px;
+    color:white;
+    text-align: center;
+    height: 13vh;
+}
+main{
+    height: 100vh;
+}
+
+/**** PAGES ****/
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    position: absolute;  /* or absolute if the user needs to scroll for more content */
+    padding: 1rem 2rem;
+}
+.active{
+    display: block; 
+}
+#home{
+    background-color: hsl(233, 70%, 91%);
+}
+#list{
+    background-color: hsl(147, 60%, 67%);
+}
+#detail{
+    background-color: hsl(240, 86%, 65%);
+}
+#searchBox{
+    padding: 1.3rem;
+    text-align: center;
+}
+#peopleList{
+    display: flex;
+    flex-direction: column;
+    
+}
+.divListItem:nth-child(even){
+    background-color: #f7f2f2;
+    display: flex;
+    border:2px solid #e1e1e1;
+    flex-wrap: wrap;
+}
+.divListItem:nth-child(odd){
+    background-color: #8a8787;
+    display: flex;
+    border:2px solid #e1e1e1;
+    flex-wrap: wrap;
+}
+.personImg{
+    flex:1;
+}
+.personName{
+    flex:3
+}
+.personMovie{
+    flex:3;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+
+
+.movieImg{
+    flex:1;
+}
+.movieName{
+
+    flex:3;
+}
+.movieEtc{
+    flex:3;
+}
+.btnDetail{
+    margin: 1.3rem;
+}
+.divMovieLabel{
+    flex:1;
+}
+.divMovieValue{
+    flex:5;
+}
+footer{
+    font-size: 0.7em;
+    padding:1.2em;
+    background-color:  rgb(180, 199, 238);
+    height:100vmin;
+  }
